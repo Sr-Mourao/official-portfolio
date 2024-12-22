@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body class="bg-gray-900 w-screen h-screen">
-    <header>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+<body class="bg-gray-900">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 dark:bg-gray-900">
+        <nav>
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="./image/foguete.png" class="h-8" alt="Felipe Mourão" />
@@ -36,7 +36,7 @@
                         <li>
                             <a href="#sobre-mim"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                aria-current="page">Sobre</a>
+                                aria-current="page">Sobre mim</a>
                         </li>
                         <li>
                             <a href="#projetos"
@@ -51,16 +51,96 @@
             </div>
         </nav>
     </header>
-    <main class="text-white flex items-center justify-center">
-        <section id="sobre-mim">
-            sobre mim
+    <main class="text-white flex flex-col items-center justify-center w-11/12 md:w-4/6 ml-auto mr-auto">
+        <section id="sobre-mim" class="my-32">
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-center bg-slate-800 p-6 rounded-lg shadow-lg my-33">
+                <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0 space-y-4">
+                    <h2 class="text-4xl font-bold text-white mb-4">Sobre mim</h2>
+                    <p class="text-lg text-gray-400">
+                        Sou desenvolvedor full stack com 2+ anos de experiência e uma paixão por enfrentar desafios.
+                        Meu
+                        maior
+                        prazer? Criar aquele botão que parece simples, mas que resolve problemas gigantes, trazendo
+                        mais
+                        facilidade e produtividade para as pessoas.
+                    </p>
+                </div>
+                <div class="hidden md:block h-auto border-l border-gray-600"></div>
+                <div class="md:w-1/2">
+                    <ul class="grid grid-cols-3 gap-6 text-gray-300">
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" />
+                            <span class="text-sm mt-2">JavaScript</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript" />
+                            <span class="text-sm mt-2">TypeScript</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js" />
+                            <span class="text-sm mt-2">Node.js</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
+                                alt="Vue.js" />
+                            <span class="text-sm mt-2">Vue.js</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
+                                alt="Nuxt.js" />
+                            <span class="text-sm mt-2">Nuxt.js</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img width="50"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                height="40" alt="amazonwebservices logo" />
+                            <span class="text-sm mt-2">AWS</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-end gap-4 mt-8">
+                <a href="./felipe_mourao_curriculo.pdf" target="_blank"
+                    class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-6 border border-gray-600 rounded-lg shadow-md inline-flex items-center space-x-2 transition duration-200 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span>Visualizar Currículo</span>
+                </a>
+                <a href="./felipe_mourao_curriculo.pdf" download
+                    class="bg-purple-600 hover:bg-purple-500 text-white font-medium py-2 px-6 border border-gray-600 rounded-lg shadow-md inline-flex items-center space-x-2 transition duration-200 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                    </svg>
+                    <span>Download Currículo</span>
+                </a>
+            </div>
         </section>
-        <!-- <section id="projetos">
+
+        <section id="projetos">
             projetos
         </section>
         <section id="contatos">
             contatos
-        </section> -->
+        </section>
     </main>
 
     <script src="./scripts/index.js"></script>

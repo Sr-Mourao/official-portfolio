@@ -1,3 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+    #sobre-mim .flex {
+        flex-direction: column;
+    }
+
+    #sobre-mim .text-center {
+        text-align: center;
+    }
+}
