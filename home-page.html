@@ -51,9 +51,9 @@
             </div>
         </nav>
     </header>
-    <main class="text-white flex flex-col items-center justify-center w-11/12 md:w-4/6 ml-auto mr-auto">
-        <section id="sobre-mim" class="my-32">
 
+    <main class="text-white items-center justify-center w-11/12 md:w-4/6 ml-auto mr-auto">
+        <section id="sobre-mim" class="my-32">
             <div
                 class="flex flex-col md:flex-row items-center justify-center bg-slate-800 p-6 rounded-lg shadow-lg my-33">
                 <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0 space-y-4">
@@ -135,11 +135,85 @@
             </div>
         </section>
 
-        <section id="projetos">
-            projetos
+        <section id="projetos" class="h-screen">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-center mb-12">Projetos</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition duration-300">
+                        <img src="./image/projects/scrum.png" alt="Projeto 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">MVP - SCRUM</h3>
+                            <p class="text-gray-400 text-sm mb-4">Este é um projeto pessoal em desenvolvimento, onde os
+                                usuários poderão criar organizações e, dentro delas, gerenciar membros para alocar
+                                sprints seguindo a metodologia Scrum.</p>
+                            <a target="_blank" href="https://app-scrum.mmouu.com.br"
+                                class="text-blue-500 hover:underline">Ver mais
+                                →</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition duration-300">
+                        <img src="./image/projects/ferrari.png" alt="Projeto 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">3D Ferrari Painter</h3>
+                            <p class="text-gray-400 text-sm mb-4">Explorando a biblioteca Three.js, você pode visualizar
+                                este modelo 3D de uma Ferrari e personalizá-la com diversas opções de cores.</p>
+                            <a target="_blank" href="https://ferraripainter.mouraocode.com.br/"
+                                class="text-blue-500 hover:underline">Ver mais →</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition duration-300">
+                        <img src="./image/projects/sd.png" alt="Projeto 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Eccomerce Certificado Digital</h3>
+                            <p class="text-gray-400 text-sm mb-4">Fiz parte da equipe que construção o eccomerce para
+                                Senha Digital Soluções Digitais</p>
+                            <a target="_blank" href="https://senhadigital.com.br/"
+                                class="text-blue-500 hover:underline">Ver mais →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contatos">
-            contatos
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg mb-6 w-full">
+                <h2 class="text-2xl font-semibold mb-6 text-center">Entre em Contato</h2>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-200">Seu Nome</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-2 p-3 w-full bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Digite seu nome">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-200">Seu E-mail</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-2 p-3 w-full bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-200">Sua Mensagem</label>
+                        <textarea id="message" name="message" required rows="4"
+                            class="mt-2 p-3 w-full bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
