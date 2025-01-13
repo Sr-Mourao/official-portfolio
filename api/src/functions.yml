@@ -1,0 +1,7 @@
+create-contact:
+  handler: src/handlers/contact/create.handler
+  events:
+    - http:
+        path: /v1
+        method: post
+        cors: true

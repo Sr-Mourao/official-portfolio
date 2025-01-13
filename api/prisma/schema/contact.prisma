@@ -1,0 +1,9 @@
+model Contact {
+    id         String   @id @default(auto()) @map("_id") @db.ObjectId
+    nome       String
+    email      String   @unique
+    mensagem   String
+    created_at DateTime @default(now())
+
+    @@map("contact")
+}

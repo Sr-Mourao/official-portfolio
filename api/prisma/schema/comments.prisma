@@ -1,0 +1,5 @@
+model Comments {
+    id String @id @default(auto()) @map("_id") @db.ObjectId
+
+    @@map("comments")
+}

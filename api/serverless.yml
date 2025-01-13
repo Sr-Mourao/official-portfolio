@@ -1,0 +1,26 @@
+app: api-portfolio
+service: api-portfolio
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  memorySize: 128
+  stage: ${env:ENVIRONMENT, 'dev'}
+  environment: ${file(env.yml)}
+  region: ${self:provider.environment.REGION}
+
+custom:
+  customDomain:
+    domainName: ${self:provider.environment.DOMAIN_NAME}
+    basePath: contact
+    stage: ${self:provider.environment.ENVIRONMENT}
+    apiType: rest
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+  - serverless-domain-manager
+
+functions:
+  - ${file(./src/functions.yml)}
